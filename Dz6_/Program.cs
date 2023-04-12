@@ -70,6 +70,22 @@
                         cello.History();
                         break;
                     case 4:
+                        Console.WriteLine("\nPresident:");
+                        President president = new President();
+                        president.InputP();
+                        president.Print();
+                        Console.WriteLine("\nSecurity:");
+                        Security security = new Security();
+                        security.InputS();
+                        security.Print();
+                        Console.WriteLine("\nManager:");
+                        Manager manager = new Manager();
+                        manager.InputM();
+                        manager.Print();
+                        Console.WriteLine("\nEngineer:");
+                        Engineer engineer = new Engineer();
+                        engineer.InputE();
+                        engineer.Print();
                         break;
                     default: Console.WriteLine("Error! Try again!"); break;
                 }
