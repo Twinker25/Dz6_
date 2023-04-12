@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dz6_
 {
-    class Device
+    class Music
     {
         public string name { get; set; }
         public int year_made { get; set; }
         public int money { get; set; }
 
-        public Device(string name, int year_made, int money)
+        public Music(string name, int year_made, int money)
         {
             this.name = name;
             this.year_made = year_made;
@@ -20,23 +20,23 @@ namespace Dz6_
         }
     }
 
-    class Kettle : Device
+    class Violin : Music
     {
-        public Kettle(string name, int year_made, int money) : base(name, year_made, money)
+        public Violin(string name, int year_made, int money) : base(name, year_made, money)
         {
         }
         public void Input()
         {
-            Console.Write("\nEnter name of device: ");
+            Console.Write("\nEnter name of violin: ");
             name = Console.ReadLine();
-            Console.Write("Enter year of made the device: ");
+            Console.Write("Enter year of made the violin: ");
             year_made = int.Parse(Console.ReadLine());
-            Console.Write("Enter value of device: ");
+            Console.Write("Enter value of violin: ");
             money = int.Parse(Console.ReadLine());
         }
         public void Sound()
         {
-            Console.WriteLine("\nSh - Sh!");
+            Console.WriteLine("\nScreech, screech, screech...!");
         }
         public void Show()
         {
@@ -46,25 +46,29 @@ namespace Dz6_
         {
             Console.WriteLine($"\nYear of made: {year_made}");
             Console.WriteLine($"Money: {money}");
+        }
+        public void History()
+        {
+            Console.WriteLine("\nThe first references to the violin date back to the 16th century in Italy");
         }
     }
-    class Microwave : Device
+    class Trombone : Music
     {
-        public Microwave(string name, int year_made, int money) : base(name, year_made, money)
+        public Trombone(string name, int year_made, int money) : base(name, year_made, money)
         {
         }
         public void Input()
         {
-            Console.Write("\nEnter name of device: ");
+            Console.Write("\nEnter name of trombone: ");
             name = Console.ReadLine();
-            Console.Write("Enter year of made the device: ");
+            Console.Write("Enter year of made the trombone: ");
             year_made = int.Parse(Console.ReadLine());
-            Console.Write("Enter value of device: ");
+            Console.Write("Enter value of trombone: ");
             money = int.Parse(Console.ReadLine());
         }
         public void Sound()
         {
-            Console.WriteLine("\nPip - Pip!");
+            Console.WriteLine("\nBlat, blat, blat...!");
         }
         public void Show()
         {
@@ -74,25 +78,29 @@ namespace Dz6_
         {
             Console.WriteLine($"\nYear of made: {year_made}");
             Console.WriteLine($"Money: {money}");
+        }
+        public void History()
+        {
+            Console.WriteLine("\nThe trombone was developed in Italy in the 16th century");
         }
     }
-    class Car : Device
+    class Ukulele : Music
     {
-        public Car(string name, int year_made, int money) : base(name, year_made, money)
+        public Ukulele(string name, int year_made, int money) : base(name, year_made, money)
         {
         }
         public void Input()
         {
-            Console.Write("\nEnter name of device: ");
+            Console.Write("\nEnter name of ukulele: ");
             name = Console.ReadLine();
-            Console.Write("Enter year of made the device: ");
+            Console.Write("Enter year of made the ukulele: ");
             year_made = int.Parse(Console.ReadLine());
-            Console.Write("Enter value of device: ");
+            Console.Write("Enter value of ukulele: ");
             money = int.Parse(Console.ReadLine());
         }
         public void Sound()
         {
-            Console.WriteLine("\nBip - Bip!");
+            Console.WriteLine("\nTwang, twang, twang...!");
         }
         public void Show()
         {
@@ -102,25 +110,29 @@ namespace Dz6_
         {
             Console.WriteLine($"\nYear of made: {year_made}");
             Console.WriteLine($"Money: {money}");
+        }
+        public void History()
+        {
+            Console.WriteLine("\nThe ukulele was created in Hawaii in the 19th century");
         }
     }
-    class Streamer : Device
+    class Cello : Music
     {
-        public Streamer(string name, int year_made, int money) : base(name, year_made, money)
+        public Cello(string name, int year_made, int money) : base(name, year_made, money)
         {
         }
         public void Input()
         {
-            Console.Write("\nEnter name of device: ");
+            Console.Write("\nEnter name of cello: ");
             name = Console.ReadLine();
-            Console.Write("Enter year of made the device: ");
+            Console.Write("Enter year of made the cello: ");
             year_made = int.Parse(Console.ReadLine());
-            Console.Write("Enter value of device: ");
+            Console.Write("Enter value of cello: ");
             money = int.Parse(Console.ReadLine());
         }
         public void Sound()
         {
-            Console.WriteLine("\nTu - Tu!");
+            Console.WriteLine("\nMellow, mellow, mellow...!");
         }
         public void Show()
         {
@@ -130,6 +142,10 @@ namespace Dz6_
         {
             Console.WriteLine($"\nYear of made: {year_made}");
             Console.WriteLine($"Money: {money}");
+        }
+        public void History()
+        {
+            Console.WriteLine("\nThe cello originated in the middle of the 16th century in Italy");
         }
     }
 }

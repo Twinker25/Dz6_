@@ -40,6 +40,34 @@
                         streamer.Desc();
                         break;
                     case 3:
+                        Console.WriteLine("\nViolin:");
+                        Violin violin = new Violin("", 0, 0);
+                        violin.Input();
+                        violin.Sound();
+                        violin.Show();
+                        violin.Desc();
+                        violin.History();
+                        Console.WriteLine("\nTrombone:");
+                        Trombone trombone = new Trombone("", 0, 0);
+                        trombone.Input();
+                        trombone.Sound();
+                        trombone.Show();
+                        trombone.Desc();
+                        trombone.History();
+                        Console.WriteLine("\nUkulele:");
+                        Ukulele ukulele = new Ukulele("", 0, 0);
+                        ukulele.Input();
+                        ukulele.Sound();
+                        ukulele.Show();
+                        ukulele.Desc();
+                        ukulele.History();
+                        Console.WriteLine("\nCello:");
+                        Cello cello = new Cello("", 0, 0);
+                        cello.Input();
+                        cello.Sound();
+                        cello.Show();
+                        cello.Desc();
+                        cello.History();
                         break;
                     case 4:
                         break;
