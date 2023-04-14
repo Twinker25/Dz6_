@@ -12,6 +12,21 @@
                 switch (choice) 
                 {
                     case 1:
+                        Console.Write("\nOriginal price of product\nEnter name of product: ");
+                        string name = Console.ReadLine();
+                        Console.Write("\nEnter price in dollars: ");
+                        int dollar = int.Parse(Console.ReadLine());
+                        Console.Write("Enter price in cents: ");
+                        int cents = int.Parse(Console.ReadLine());
+                        Money price = new Money(dollar, cents);
+                        Product product = new Product(name, price.Dollars, price.Cents);
+                        product.Display();
+                        Console.Write("\nEnter price in dollars to reduce: ");
+                        dollar = int.Parse(Console.ReadLine());
+                        Console.Write("Enter price in cents to reduce: ");
+                        cents = int.Parse(Console.ReadLine());
+                        product.ReducePrice(dollar, cents);
+                        product.Display(); 
                         break;
                     case 2:
                         Console.WriteLine("\nKettle:");
